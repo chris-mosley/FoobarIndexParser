@@ -17,6 +17,7 @@ $indexMeta=@{
 $offset=24
 for($i=0; $i -lt $indexMeta.PlaylistCount ; $i++)
 {
+    # we pull these out early because they get used for most of the properties
     $namelength=([System.BitConverter]::ToInt32($indexBytes,$offset))
     $metadatalength=([System.BitConverter]::ToInt32($indexBytes,($offset+$namelength+8)))
     $playlistHash=@{
