@@ -1,5 +1,5 @@
 # FoobarIndexParser
-Script to figure out what each of the bytes in the foobar index.dat file are for.
+Script to reverse engineer what each of the bytes in the foobar index.dat file are for.
 
 Here's the structure as I understand it so far:
 
